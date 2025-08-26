@@ -1,4 +1,4 @@
-## Hi there 👋
+## Hi there 👋🏾
 
 <!--
 **evelyn77-lab/evelyn77-Lab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
