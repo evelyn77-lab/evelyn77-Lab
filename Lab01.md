@@ -45,11 +45,11 @@ My Command Line Shell is:
 ```
 Hello world :)
 ```
-10. Make a copy of `test.txt` named `copy.txt` in `DirA`: cp test.txt
-11. View the contents of `DirA`: 
-12. Make a copy of `test.txt` in `Dir B` named `fodder.txt`:
-13. Delete / remove both `fodder.txt` AND `Dir B`:
+10. Make a copy of `test.txt` named `copy.txt` in `DirA`: cp /Users/osarumwenseenoma/DirA/test.txt /Users/osarumwenseenoma/DirA/copy.txt -> Done ✅
+11. View the contents of `DirA`: ls DirA -> Done ✅
+12. Make a copy of `test.txt` in `Dir B` named `fodder.txt`: cp /Users/osarumwenseenoma/DirA/test.txt /Users/osarumwenseenoma/DirB/fodder.txt -> Done ✅
+13. Delete / remove both `fodder.txt` AND `Dir B`: rm /Users/osarumwenseenoma/DirB/fodder.txt -> rm -rf /Users/osarumwenseenoma/DirB -> Done ✅
 
 ## Citations
 
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+I used Google to help me complete this assignment. My first search was "All Commands for Mac Terminal and their uses," which gave me a clear understanding of the commands before applying them. After that, I relied on Google to guide me through most of the activities. While I already had an idea of what to do, Google helped me structure my approach. By the time I reached the tenth question, I felt confident and knew exactly what to do.
