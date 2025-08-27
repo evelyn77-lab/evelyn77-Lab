@@ -5,7 +5,7 @@
 
 ## Part 1 - GitHub Profile
 
-1. [evelyn77-Lab GitHub Profile](FIXTHISURL-https://github.com/evelyn77-Lab)
+1. [evelyn77-Lab GitHub Profile](https://github.com/evelyn77-Lab)
 
 ## Part 2 - Research
 
