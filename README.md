@@ -2,6 +2,7 @@
 - My name is Evelyn Enoma.
 - I major in Computer Science.
 - I'm not currently working on any projects this semester, I'm just trying to find my bearing in school 😅
+- I hope to get better at coding and make new friends.
 
 <!--
 **evelyn77-lab/evelyn77-Lab** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
