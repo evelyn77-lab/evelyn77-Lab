@@ -1,6 +1,7 @@
 ## Lab 01
 
 - Name: Evelyn
+- Major: Computer Science
 - Email: enoma.5@wright.edu
 
 ## Part 1 - GitHub Profile
@@ -29,7 +30,7 @@ My OS is:
 - [] Linux
 - [x] Mac
 
-My Command Line Shell is: 
+My Command Line Shell is: Terminal
 
 ### Navigating My OS on the Command Line
 
@@ -48,7 +49,7 @@ Hello world :)
 10. Make a copy of `test.txt` named `copy.txt` in `DirA`: cp /Users/osarumwenseenoma/DirA/test.txt /Users/osarumwenseenoma/DirA/copy.txt -> Done ✅
 11. View the contents of `DirA`: ls DirA -> Done ✅
 12. Make a copy of `test.txt` in `Dir B` named `fodder.txt`: cp /Users/osarumwenseenoma/DirA/test.txt /Users/osarumwenseenoma/DirB/fodder.txt -> Done ✅
-13. Delete / remove both `fodder.txt` AND `Dir B`: rm /Users/osarumwenseenoma/DirB/fodder.txt -> rm -rf /Users/osarumwenseenoma/DirB -> Done ✅
+13. Delete / remove both `fodder.txt` AND `Dir B`: rm -rf /Users/osarumwenseenoma/DirB -> Done ✅
 
 ## Citations
 
