@@ -15,25 +15,25 @@ Command to SSH to AWS instance:
 ## Part 2 Answers
 
 1. `chmod u+r bubbles.txt`
-    - Means: This command ensures that the user who owns bubbles.txt has the ability to view its contents.
-    - Assessment: 
+    - Means: This command adds the read premission to the file owner of bubbles.txt.
+    - Assessment: It's a good command to use if the user was previously denied access.
 2. `chmod u=rw,g-w,o-x banana.cabana`
     - Means: This command sets the file user's premission to read and write only, it removes the write premission from the file group, and lastly removes the execute premission from other users.
     - Assessment: Not recommended because if the original setting allowed all users access to all premissions, then the file onwer can only read and write, the file group members can read and execute the file, while other users can read and write the file. This is bad because other user can literaly be anyone and if anyone can read AND edit a private file that's going to cause problems.
 3. `chmod a=w snow.md`
-    - Means: 
-    - Assessment:
+    - Means: This command sets everyone on the system's permission of the show.md file to write only.
+    - Assessment: This is generally not recommended as that would mean everyone that can access your system(computer) will be able to edit the file making it unsafe.
 4. `chmod 751 program`
-    - Means: 
-    - Assessment:
+    - Means: This command gives the user all premissions (Read, Write and execute) over the directory(Program), it gives the directory group the read and execute premissions only, while it gives other users execute permissions only.
+    - Assessment: This command is not necessarily ideal, usually if a user is given write premission, they are also given read permissions in order to see what they are writing to execute it. For this command however, the group directory users can't see anything in the directory, therefore they can't execute or even write anything. Additionally, it's not safe to give anyone that can access your computer or server the permission to execute a file in a secure directory.
 5. `chmod -R ug+w share`
-    - Means: 
-    - Assessment:
+    - Means: This command adds the write premission to the permissions of the file owner, the group file users and all other users in the share directory.
+    - Assessment: This command is not recommended as it gives every user in the share directory the ablity to edit a file in the share directory. It's not safe, as anyone that can access your system/server can change files that don't need changing.
 
 ## Part 3 Answers
 
-1. Command to create new user: 
-2. Path to new user's home directory: 
+1. Command to create new user: sudo sysadminctl -addUser <USERNAME> -fullName "Full Name" -password <PASSWORD>
+2. Path to new user's home directory: /Users/[USERNAME]
 3. Evaluate if `ubuntu` can add files to new user's home directory:
 4. Command to switch to new user:
 5. Command(s) to go to new user's home directory:
