@@ -32,14 +32,14 @@ Command to SSH to AWS instance:
 
 ## Part 3 Answers
 
-1. Command to create new user: sudo sysadminctl -addUser <USERNAME> -fullName "Full Name" -password <PASSWORD>
-2. Path to new user's home directory: /Users/[USERNAME]
-3. Evaluate if `ubuntu` can add files to new user's home directory:
-4. Command to switch to new user:
-5. Command(s) to go to new user's home directory:
-6. Evaluate if new user can add files to user's home directory:
-7. Command to return to `ubuntu` user:
-8. Command to return to `ubuntu` home directory: 
+1. Command to create new user: I used "sudo useradd MAnthony" to create a user named Mary Anthony 
+2. Path to new user's home directory: This is Mary Anthony's directory path /Home/MAnthony
+3. Evaluate if `ubuntu` can add files to new user's home directory: Yes ubuntu can add files to Mary Anthony's directory, ubuntu would just need to add sudo in front of the command, like this: sudo touch /home/MAnthony/tester.txt
+4. Command to switch to new user: I used the command " su MAnthony" to switch users.
+5. Command(s) to go to new user's home directory: I used the command "cd /home/MAnthony" to go to the user's home directory
+6. Evaluate if new user can add files to user's home directory: Mary Anthony cannot create a new file in her home directory, I tried using this command "touch NewFile" but my permission was denied.
+7. Command to return to `ubuntu` user: I used the command "cd ~" to switch back to ubuntu.
+8. Command to return to `ubuntu` home directory: I used the command "cd /home/ubuntu" to go back to ubuntu's home directory.
 
 ## Part 4 Answers
 
