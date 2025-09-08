@@ -54,28 +54,28 @@ Command to SSH to AWS instance:
 
 For each, write the command used or answer the question posed.
 
-1. Command(s) to make file using `sudo`: sudo touch /path/to/your/file.txt
-2. Command(s) to make file with `root`:
-3. Describe / compare ownership and permissions of files:
+1. Command(s) to make file using `sudo`: I used the command 'sudo touch madewithsudo.txt' to make the text file.
+2. Command(s) to make file with `root`: I used the command 'sudo -i' to switch users to the root user and then used the command 'touch madewithroot.txt' to make the text file.
+3. Describe / compare ownership and permissions of files: For the ubuntu user I had to use sudo to make the file, however, for the root user I was just able to use the regular command without the sudo override.
 4. Which account can do what actions? (Type Y or N in columns)
 
 Contents inside of `share`
 | Account   | Can View  | Can Edit  | Can Change Permissions    |
 | ---       | ---       | ---       | ---                       |
-| `root`    |           |           |                           |
-| `ubuntu`  |           |           |                           |
-| `BOB`     |           |           |                           |
+| `root`    |     Y      |     Y      |           Y                |
+| `ubuntu`  |     Y      |      Y     |            Y               |
+| `BOB`     |    N(but it's supposed too)     |    N(it's supposed too)    |   N(it's supposed to)       |
 
 `madewithsudo.txt`
 | Account   | Can View  | Can Edit  | Can Change Permissions    |
 | ---       | ---       | ---       | ---                       |
-| `root`    |           |           |                           |
-| `ubuntu`  |           |           |                           |
-| `BOB`     |           |           |                           |
+| `root`    |     Y      |      Y     |           Y                |
+| `ubuntu`  |     Y      |      Y     |           Y                |
+| `BOB`     |     N      |      N     |            N               |
 
-5. Command(s) to modify permissions:
-6. How to give user account `sudo`:
+5. Command(s) to modify permissions: 
+6. How to give user account `sudo`: I didn't do this but, the professor talked about it in class. Ok so first you have to use the command 'sudo -i' to switch to root user then you have to use the command 'usermod -aG sudo username' to add which ever user to the sudo group. After all that you have to make the user logout and log back in to test if it worked!
 
 ## Citations
 
-To add citations, provide the site and a summary of what it assisted you with.  If generative AI was used, include which generative AI system was used and what prompt(s) you fed it.
+For this lab I enlisted the help of chatGPT, Google and Redhat. Also the TA's helped alot with most of the questions I had.
