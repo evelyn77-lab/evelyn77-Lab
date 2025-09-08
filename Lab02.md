@@ -5,7 +5,7 @@
 
 ## Part 1 Answers
 
-Full / absolute path to your private key file: 
+Full / absolute path to your private key file: /Users/osarumwenseenoma/labsuser.pem
 
 Command to SSH to AWS instance:
 ```
@@ -43,18 +43,18 @@ Command to SSH to AWS instance:
 
 ## Part 4 Answers
 
-1. Command(s) to create group named `squad` and add members:
-2. Command(s) to add `ubuntu` & user to group `squad`:
-3. Command(s) to allow `squad` to view the `ubuntu` user's home directory contents:
-4. Command(s) to modify `share` to have group ownership of `squad`:
-5. Describe your tests and commands with the user account:
-6. Describe the full set of permissions / settings that enable the user to make edits:
+1. Command(s) to create group named `squad` and add members: I used the command 'sudo groupadd squad' to create the group squad. 
+2. Command(s) to add `ubuntu` & user to group `squad`: I used the command 'sudo gpasswd -a MAnthony squad' and 'sudo gpasswd -a ubuntu squad' to add ubuntu and Mary Anthony to the group, squad.
+3. Command(s) to allow `squad` to view the `ubuntu` user's home directory contents: I used the command 'chmod -R g=r /home/ubuntu' to set the premissions of the members of the squad group to view only on ubuntu's user home directory contents.
+4. Command(s) to modify `share` to have group ownership of `squad`: First I created a share directory in ubuntu with the command 'mkdir share.' Then I used the command 'sudo chgrp -R squad /home/ubuntu/share' to make squad the group for the folder. After that I used the command 'sudo chmod -R 770 /home/ubuntu/share' to give the owner(ubuntu) and the group members of squad full permissions. Lastly, I used the command 'sudo chmod g+s /home/ubuntu/share' to ensure that all new files will belong to the group members of squad.
+5. Describe your tests and commands with the user account: It did not work the first time, however I realized that I gave squad write premissions not read, I changed that and it still did not work, I asked chatGPT why this is and it told me that I needed to give the group users execute premissions. I did and it still did not work.
+6. Describe the full set of permissions / settings that enable the user to make edits: I woas not able to go into the share directory.
 
 ## Part 5 Answers
 
 For each, write the command used or answer the question posed.
 
-1. Command(s) to make file using `sudo`: 
+1. Command(s) to make file using `sudo`: sudo touch /path/to/your/file.txt
 2. Command(s) to make file with `root`:
 3. Describe / compare ownership and permissions of files:
 4. Which account can do what actions? (Type Y or N in columns)
